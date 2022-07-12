@@ -1,0 +1,130 @@
+<body>
+    <!--Início Header-->
+    <header>
+        <div class="container-grid posicionamento-header">
+        <a href=""><img class="logo" src="src\assets\img\logo_168px.png" alt="Logo do Site Jogo Antigo"></a>
+            <nav id="menu" class="menu">
+                <a href="">Quem somos</a>
+                <a href="">Conteúdo</a>
+                <a href="">Loja</a>
+                <a href="login.html">Login</a>
+            </nav>
+            <a href="#" id="barras"><img class="barras" src="src\assets\img\menu_barras.png" alt="Menu de Barras"></a>
+        </div>
+    </header>
+    <!--Fim Header-->
+
+    <!--Início Banner-->
+    <section class="banner">
+        <div class="container-grid posicao-texto">
+            <div class="imagem-banner">
+                <img src="src\assets\img\imagem_banner_510x380.jpg" alt="Imagem Banner">
+            </div>
+            <div class="texto-banner">
+                <h1>80's Arcade League 2022</h1>
+                <p>Um campeonato de Odyssey e Atari com consoles originais!</p>
+                <a href="">Inscreva-se</a>
+            </div>
+        </div>
+    </section>
+    <!--Fim Banner-->
+
+    <!--Início Secao Jogos-->
+    <section class="secao-jogos">
+        <div class="container-grid jogos"> <!--no modelo a classe estava "jogos container"-->
+            <a href=""><img src="src\assets\img\comando_noturno_120px.jpg"></a>
+            <a href=""><img src="src\assets\img/defensores_da_liberdade_120px.jpg"></a>
+            <a href=""><img src="src\assets\img/frogger_120px.jpg"></a>
+            <a href=""><img src="src\assets\img/hero_120px.jpg"></a>
+            <a href=""><img src="src\assets\img/river_raid_120px.jpg"></a>
+        </div>
+    </section>
+    <!--Fim Secao Jogos-->
+
+    <!--Inicio Secao Consoles-->
+    <section class="secao-consoles">
+        <div class="container-grid consoles">
+            <div class="texto-consoles">
+                <h2>Conheça os consoles clássicos</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur 
+                    adipiscing elit, sed do eiusmod tempor 
+                    incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation 
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate 
+                    velit esse cillum dolore eu fugiat nulla pariatur
+                    ... <a href="">Saiba mais</a></p>
+            </div>
+            <div class="imagem-consoles">
+                <img src="src\assets\img/console_e_tv.png" alt="Imagem de console antigo e tv" width="680" height="421">
+                <!--não consegui ajustar o tamanho da imagem no CSS-->
+            </div>
+        </div>
+    </section>
+    <!--Fim Secao Consoles-->
+
+    <!--Início Seção Jogue Online-->
+    <section class="secao-jogue-online">
+        <h1>Jogue Online</h1>
+        <div class="container-grid jogue-online">
+            <div class="cardjogo">
+                <img src="src\assets\img/console_pong.jpg" alt="Imagem do Jogo">
+                <h3>Pong</h3>
+            </div>
+            <div class="cardjogo">
+                <img src="src\assets\img/console_atari_2600.jpg" alt="Imagem do Jogo">
+                <h3>Atari 2600</h3>
+            </div>
+            <div class="cardjogo">
+                <img src="src\assets\src\assets\img/console_odyssey.jpg" alt="Imagem do Jogo">
+                <h3>Odyssey</h3>
+            </div>
+            <div class="cardjogo">
+                <img src="src\assets\img/console_mega-drive.png" alt="Imagem do Jogo">
+                <h3>Mega Drive</h3>
+            </div>
+        </div>
+    </section>
+    <!--Fim Seção Jogue Online-->
+
+    <!--Início Footer-->
+    <footer>
+        <div class="container-grid footer">
+            <a href="indexhtml"><img class="logo" src="src\assets\img/logo_168px.png" alt="Logo do Site"></a><!--logo-->
+            <p>Rua Julieta dos Espíritos 171<br />Barra Velha<br />São Paulo-SP<br />93465-985</p><!--endereço-->
+            
+            <div class="cadastrese">
+                <h2>Cadastre-se e receba novidades!</h2>
+                <form action="">
+                    <input id="campo-email" type="email" placeholder="E-mail" required>
+                    <button onclick="enviarEmail()" class="botao-cadastrar">Cadastrar</button>
+                </form>
+            </div>
+            
+            <div class="redes-sociais-footer">
+                <a href=""><img src="src\assets\img/logo_face.png"></a>
+                <a href=""><img src="src\assets\img/logo_instagram.png"></a>
+                <a href=""><img src="src\assets\img/logo_whats_50px.png"></a>
+            </div>
+
+        </div>
+    </footer>
+    <!--Fim Footer-->
+
+    <!-- <script>
+        let menu = document.getElementById("menu");
+        function mostrarMenu(){
+            if(menu.style.display != "flex"){
+                menu.style.display = "flex"
+            }else{
+                menu.style.display = "none"
+            }
+        }
+    </script> -->
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    
+</body>

@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Início Header*/
+.container-grid{
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header{
+    background-color: #1E1C21;
+    height: 80px;
+    }
+
+.menu{
+    width: 820px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 16px;
+}
+
+.barras{
+    width: 50px;
+    display: none;
+}
+/*Fim Header*/
+/*Início Banner*/
+.banner{
+    background-color: black;
+    height: 500px;
+    background-size: cover;
+}
+
+.posicao-texto{
+    justify-content: space-between;
+}
+
+.texto-banner{
+    width: 495px;
+    color: white;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 16px;
+}
+
+.texto-banner h1{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.texto-banner a{
+    background-color: tomato;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.texto-banner p{
+    margin-bottom: 50px;
+}
+/*Fim Banner*/
+/*Início Secao Jogos*/
+.secao-jogos{
+    background-color: black;
+    height: 200px;
+}
+
+.jogos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*Fim Secao Jogos*/
+
+/*Inicio Secao Consoles*/
+.secao-consoles{
+    background-color: #1E1C21;
+    padding-top: 50px;
+}
+ 
+.consoles{
+    display: flex;
+    justify-content: space-between;
+}
+
+.texto-consoles{
+    width: 580px;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 12px;
+}
+
+.texto-consoles h2{
+    margin-bottom: 15px;
+}
+
+.texto-consoles p{
+    margin-bottom: 15px;
+}
+
+.texto-consoles a{
+    color: tomato;
+}
+
+.imagem-consoles{
+    float: right;
+}
+/*Fim Secao Consoles*/
+
+/*Início Secao Jogue Online*/
+.secao-jogue-online{
+    background-color: black;
+    height: 500px;
+}
+
+.secao-jogue-online h1{
+    display:grid;
+    justify-items: center;
+    color: white;
+    padding-top: 50px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.jogue-online{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.cardjogo{
+    width: 17em;
+    height: 16em;
+    background: var(--gradient);
+    color: #fff;
+    margin-bottom: 40px;
+    box-shadow: 0px 0px 10px tomato,0px 0px 30px tomato;
+}
+
+.cardjogo img{
+    width: 17em;
+    height: 10em;
+}
+
+.cardjogo h3{
+    font-size: 16px;
+    padding-top: 20px;
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+}
+/*Fim Secao Jogue Online*/
+
+/*Início Footer*/
+footer{
+    background-color: #1E1C21;
+    height: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    }
+
+.footer p{
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+}
+
+.redes-sociais-footer{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.redes-sociais-footer img{
+    height: 46px;
+    width: 46px;
+}
+
+.cadastrese h2{
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+    padding-bottom: 10px;
+}
+
+.cadastrese input[type="email"]{
+    width: 14em;
+    height: 30px;
+}
+
+.botao-cadastrar{
+    width: 8em;
+    height: 30px;
+    color: white;
+    background-color: tomato;
+    border: none;
+    font-size: 1em;
+}
+
+/*Fim Footer*/
+
+@media screen and (max-width: 1200px) {
+    .container-grid{
+        width: 90%;
+    }
+    .menu{
+        width: 460px;
+    }
+    .menu a{
+        font-size: 16px;
+    }
+    .logo{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container-grid{
+        width: 80%;
+    }
+
+    .barras{
+        display: inline-block;
+    }
+    .menu{
+        display: none;
+        flex-direction: column;
+        width: 200px;
+        position: absolute;
+        top: 0;
+        right: 65px;
+        background-color: black;
+    }
+    .menu a{
+        text-align: center;
+        padding: 15px;
+    }
+
+    .menu-ativo{
+        display: flex;
+    }
+
+    .posicionamento-header{
+        position: relative;
+    }  
+}
